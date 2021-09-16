@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Прайст-лист</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-page">
+  <!-- header -->
+  <header class="main-header">
+    <!-- navigation -->
+    <nav class="main-navigation">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/index-logo.svg" width="111" height="24" alt="логотип барбершопа «Бородинский»">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="price.html" class="site-navigation-current">Прайст-лист</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="login-link">Вход</li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main -->
+  <main class="container">
+    <div class="innaer-page-container">
+      <h1 class="page-title">Прайс-лист</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a class="breadcrumbs-current">Прайс-лист</a></li>
+      </ul>
+    </div>
+    <div class="inner-content">
+      <p class="page-description">Истинно мужская классика</p>
+      <div class="catalog-columns">
+        <!-- brend-list -->
+        <section class="brends">
+          <h2 class="brends-title">Мы используем только лучшие средства:</h2>
+          <ul class="brend-list">
+            <li class="brend-item">Baxter of California</li>
+            <li class="brend-item">Mr Natty</li>
+            <li class="brend-item">Suavecito</li>
+            <li class="brend-item">Malin+Goetz</li>
+          </ul>
+        </section>
+        <!-- prices for masters -->
+        <section class="masters">
+          <h2 class="masters-title">Цены на услуги наших мастеров:</h2>
+          <table class="masters-table">
+            <tr>
+              <td>Стрижка</td>
+              <td>1500 ₽</td>
+            </tr>
+            <tr>
+              <td>Стрижка бороды</td>
+              <td>500 ₽</td>
+            </tr>
+            <tr>
+              <td>Накрутка усов</td>
+              <td>350 ₽</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+      <!-- about-us -->
+      <section class="about-us">
+        <h2 class="about-us-title">Несколько слов о нас:</h2>
+        <div class="catalog-columns">
+          <p class="about-us-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+          <p class="about-us-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
+            свободно!</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <p class="footer-contacts">
+        Барбершоп «Бородинский»<br>
+        Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <a href="map.html">Как нас найти?</a><br>
+        Телефон: +7 (495) 666-02-66
+      </p>
+      <div class="footer-social">
+        <b>Давайте дружить!</b>
+        <ul class="footer-social__list">
+          <li class="social-button"><a href="#">Вконтакте</a></li>
+          <li class="social-button"><a href="#">Фейсбук</a></li>
+          <li class="social-button"><a href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Разработано:</b>
+        <a href="#" class="button">HTML academy</a>
+      </p>
+    </div>
+  </footer>
+  <!-- всплывающее окно -->
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="user-login" class="visually-hidden">Логин</label>
+        <input id="user-login" type="text" class="login-icon-user" name="login" placeholder="Логин">
+      </p>
+      <p>
+        <label for="user-password" class="visually-hidden">Пароль</label>
+        <input id="user-password" type="password" class="login-icon-password" name="password" placeholder="Пароль">
+      </p>
+      <p class="login-password-info">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <!-- <label for="login-password-info">Запомните меня</label> -->
+        <a href="#" class="restore">Я забыл пароль</a>
+      </p>
+      <button type="submit" name="button-enter" class="button">Войти</button>
+    </form>
+    <button type="button" name="button-close-enter" class="modal-close">Закрыть</button>
+  </section>
+</body>
+
+</html>
